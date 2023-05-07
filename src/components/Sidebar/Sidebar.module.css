@@ -1,0 +1,180 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.notesProfileContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+/* Styling for the heading inside the sidebar */
+.sidebarContainer h3 {
+    width: 100%;
+    height: 8vh;
+    letter-spacing: 0.02em;
+    margin-top: 2vh;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-left: 1vw;
+    line-height: 37px;
+}
+
+/* Styling for the button */
+.btn {
+    color: #FFFFFF;
+    line-height: 97.69%;
+    background-color: #000000;
+    margin: 1.8vh 0 2vh 1vw;
+    width: 82%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 6.5vh;
+    border-radius: 50px;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+
+/* Styling for the scrollbar of the notes/profiles container */
+.notesProfileContainer::-webkit-scrollbar {
+    width: .6vw;
+}
+
+/* Styling for the container of notes/profiles */
+.notesProfileContainer {
+    display: flex;
+    flex-direction: column;
+    height: 78.5%;
+    overflow-y: overlay;
+}
+
+
+/* Styling for the container of the sidebar */
+.sidebarContainer {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto';
+    padding-left: 1vw;  
+}
+
+/* Add hover style to .btn */
+.btn:hover {
+    cursor: pointer;
+}
+
+.notesProfileContainer::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgb(197, 197, 197);
+}
+
+/* Styling for each note/profile */
+.notesProfile {
+    height: 9.5vh;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 1vw;
+    border-radius: 32px 0px 0px 32px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 24px;  
+}
+
+/* Hover styling for each note/profile */
+.notesProfile:hover {
+    cursor: pointer;
+    background-color: #f8f6f2;
+}
+
+/* Styling for the circle in each note/profile */
+.notesProfile h5 {
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: #0047FF;
+    color: #FFFFFF;
+}
+
+/* Add hover styles to the label inside .btn */
+.btn label:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (min-height:350px) and (max-height:650px) {
+    .btn {
+        font-size: 1.4rem;
+ 
+    
+    }
+
+    .notesProfile h5 {
+        font-size: 1.2em;
+    }
+
+    .notesProfile p {
+        font-size: 1.15em;
+    }
+
+    .sidebarContainer h3 {
+        font-size: 1.55rem;
+        
+    }
+}
+
+
+/* Styling for the text in each note/profile */
+.notesProfile p {
+    font-size: 1.2em;
+    margin-left: .8vw;
+}
+
+
+@media only screen and (max-width: 376px) {
+    .sidebarContainer {
+
+        width:1200px;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+
+    }
+
+    .sidebarContainer>h3 {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+
+    }
+
+    .btn {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 25px;
+        width: 95px; 
+        height: 55px;       
+    }
+
+
+    .notesProfile h5 {
+        width: 45%;
+        height: 100%;
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+

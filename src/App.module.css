@@ -1,0 +1,175 @@
+/* Set margin, padding, and box-sizing to 0 for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.createNoteBtn button:hover {
+  height: 4.6vh;
+  font-size: 1.15em;
+  width: 8.6vw;
+}
+
+
+
+/* Create an overlay with a black background that covers the entire screen, and align the content in the center */
+.overlay {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 160.19%;
+  letter-spacing: 0.035em;
+  color: #000000;
+  transition: 0.5;
+  font-weight: 500;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  font-family: 'Roboto';
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+}
+
+/* Set the width and height of the App container to 100% of the viewport and display its child elements as flex */
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
+/* Set the width, height, background color, border radius, and padding of the overlay content */
+.overlaycontent {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  position: relative;
+  width: 40%;
+  padding: 1.95vh 1.5vw .5vh 1.5vw;
+  height: 34.5%;
+}
+
+
+/* Style the label element for each color option */
+.colorsBox label {
+  width: 3vw;
+  border-radius: 50%;
+  height: 5.95vh;
+}
+
+
+
+.overlaycontent h5 {
+
+  margin-right: 2.2vw;
+  font-size: 1.1em;
+  margin-left: .75vw;
+}
+
+
+/* Align the group name, color container, and create note button elements horizontally */
+.groupName,
+.colorContainer,
+.createNoteBtn {
+  display: flex;
+  margin-top: 4.5%;
+  align-items: center;
+}
+
+/* Set the font size of the h4 and h5 elements within the overlay content */
+.overlaycontent h4 {
+  font-size: 1.3em;
+}
+
+
+
+/* Style the container for the color options */
+.colorsBox {
+  justify-content: space-evenly;
+  list-style: none;
+  width: 70%;
+  display: flex;
+}
+
+/* Style the input element within the group name container */
+.groupName input {
+  padding-left: 4%;
+  font-size: 1em;
+  width: 66%;
+  height: 5.75vh;
+  border: 2px solid #CCCCCC;
+  border-radius: 22px;
+  margin-left: 1vw;
+  font-weight: 400;
+  color: #979797;
+}
+
+
+/* Align the create note button to the right and set its hover style */
+.createNoteBtn {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+
+/* Style the create note button */
+.createNoteBtn button {
+  color: #FFFFFF;
+  width: 8.5vw;
+  height: 4.5vh;
+  font-weight: 400;
+  font-size: 1em;
+  background-color: #000000;
+  border-radius: 11px;
+}
+
+
+/* Style the label element for each color option when it is active (clicked) */
+.colorsBox label:active {
+  border: 2px solid red;
+}
+
+
+@media only screen and (max-width: 376px) {
+  .overlaycontent {
+    width: 70%;
+    height: auto;
+    font-size: 0.8em;
+  }
+
+  .createNoteBtn>button {
+
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 100px;
+
+  }
+
+  .groupName>h4 {
+    font-size: 1em;
+  }
+
+  .colorContainer>h4 {
+    font-size: 1em;
+  }
+
+  .colorsBox {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .colorsBox label {
+    padding: 11px;
+    height: auto;
+    width: auto;
+
+
+  }
+
+}

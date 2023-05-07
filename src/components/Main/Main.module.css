@@ -1,0 +1,177 @@
+/* Reset all margins and paddings and set box-sizing to border-box to include border and padding within the element's total width and height */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the container that holds the right side of the page */
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the navbar at the top of the page */
+.navbar {
+    height: 10vh;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 75vw;
+}
+
+
+#submitBtn {
+    width: 35px;
+    height: 29px;
+}
+
+#submitBtn:hover {
+    filter: brightness(0);
+}
+
+
+/* Scroll CSS */
+/* Scrollbar styles for the container that holds the recent messages */
+
+.recentMsgContainer::-webkit-scrollbar {
+    width: .6vw;
+}
+
+.recentMsgContainer::-webkit-scrollbar-track {
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.recentMsgContainer::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgb(197, 197, 197);
+}
+
+/* Style for the circular icon in the navbar */
+.navbar h4 {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #0047FF;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+/* Style for the text in the navbar */
+.navbar p {
+    margin-left: 1vw;
+    font-size: 1.2rem;
+}
+
+/* Style for the container that holds the recent messages */
+.recentMsgContainer {
+    width: 100%;
+    height: 60vh;
+    padding: 3vh 0;
+    background-color: #F7ECDC;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    overflow-y: scroll;
+}
+
+/* Style for the container that holds the date and time of each message */
+.msgDTContainer {
+    font-weight: 500;
+}
+
+/* Style for the container that holds the text of each message */
+.msgTContainer {
+    font-weight: 400;
+    width: 50vw;
+}
+
+
+/* Style for each recent message */
+.recentMsg {
+    /* font family robotto adding to react msg */
+    font-family: 'Roboto', sans-serif;
+    line-height: 160.19%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Input Box */
+/* Style for the input box container */
+.inputBoxContainer {
+    width: 100%;
+    justify-content: center;
+    height: 26.5vh;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 0px 15px;
+}
+
+
+/* Style for the textarea inside the input box container */
+.inputBoxContainer textarea {
+    width: 92%;
+    font-size: 1rem;
+    height: 80%;
+    border-radius: 9px;
+    font-weight: 400;
+    border: 1px solid #CCCCCC;
+    font-family: 'Roboto', sans-serif; 
+    padding: 1.2vh 1.3vw;
+    line-height: 160.19%; 
+    resize: none;
+}
+
+/* Style for the send icon inside the input box container */
+.inputBoxContainer img {
+    position: absolute;
+    margin: 10vh 0 0 62.5vw;
+}
+
+
+
+
+/* if the screen size is less than 350px then apply these styles */
+@media only screen and (max-width: 376px) {
+    #submitBtn {
+        width: 31px;
+        height: 26px;
+        margin-right: 65px;
+        margin-bottom: -1px;
+    }
+
+    .inputBoxContainer textarea {
+        font-size: 0.9rem;
+
+    }
+    .inputBoxContainer{
+        width: auto;
+        height: 200px;
+    }
+    .navbar h4 {
+        font-size: 14px;
+        margin-left: 10px;
+        padding-left: 18px;
+        padding-right: 15px;
+        height:35px;
+        margin-right: 5px;
+    }
+
+    .recentMsgContainer{
+        padding-left: 25px;
+        font-size: 15px;
+    
+    }
+    
+
+
+}
+
